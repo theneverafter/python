@@ -1,5 +1,5 @@
 from decimal import *
-# setting decimal precision to 2 places
+# TODO: figure out why .prec includes leading digits
 getcontext().prec = 4
 
 lunch_price = 2.95
@@ -18,6 +18,7 @@ levi_balance = float(input("Enter Levi's remaining balance: "))
 
 print(f"Is the cost of a lunch still {lunch_price}?")
 
+# TODO: add input error handling 
 same_price = input("Yes / No: ")
 
 if same_price.lower() == "no":
